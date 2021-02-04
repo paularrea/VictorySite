@@ -28,7 +28,7 @@ header{
 @media (min-width: 800px) {
     header{
         width: 100%;
-        padding: 2rem 8rem;
+        padding: 2rem 2rem;
     }
     .navBar{
         .logo_nav_container{
@@ -61,13 +61,26 @@ header{
         
     }
 }
-
-@media (min-width: 1100px) {
+@media (min-width: 900px) {
     header{
-        padding: 2rem 14rem; 
+        padding: 2rem 4rem; 
     }
 }
-
+@media (min-width: 950px) {
+    header{
+        padding: 2rem 6rem; 
+    }
+}
+@media (min-width: 1100px) {
+    header{
+        padding: 2rem 10rem; 
+    }
+}
+@media (min-width: 1300px) {
+    header{
+        padding: 2rem 15rem; 
+    }
+}
 @media (min-width: 1600px) {
     header{
         padding: 2rem 20rem; 

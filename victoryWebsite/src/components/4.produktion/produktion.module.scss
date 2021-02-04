@@ -32,9 +32,9 @@
  }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 870px) {
     .container{
-        padding: 4rem 8rem; 
+        padding: 4rem 2rem; 
         h2{
          font-size: 44px;
         }
@@ -75,9 +75,22 @@
         }
      }
 }
+@media (min-width: 900px) {
+    .container{
+        padding: 6rem 4rem; 
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 950px) {
+    .container{
+        padding: 6rem 6rem; 
+        padding-bottom: 0;
+    }
+}
 @media (min-width: 1100px) {
     .container{
-        padding: 6rem 14rem; 
+        padding: 6rem 10rem; 
     }
     .flex_container{
         justify-content: center;
@@ -90,7 +103,12 @@
         }
     }
 }
-
+@media (min-width: 1300px) {
+    .container{
+        padding: 6rem 15rem; 
+        padding-bottom: 0;
+    }
+}
 @media (min-width: 1600px) {
     .container{
         padding: 6rem 20rem; 
