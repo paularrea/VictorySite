@@ -8,12 +8,24 @@ const Intro = () => {
   return (
     <>
       <MediaQuery maxWidth={700}>
-        <div id='home' name='scrollMark' className={styles.container}>
-          <HomeOne />
-          <div className={styles.intro_container}>
+        <div id="home" className={styles.container}>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+            <HomeOne />
+          </div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            className={styles.intro_container}
+          >
             <h2>B2B Unternehmen auf dem schweizer Markt</h2>
             <h4>Wir verkaufen spezifische Lösungen.</h4>
-            <div className={styles.btn_container}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="250"
+              data-sal-duration="1000"
+              className={styles.btn_container}
+            >
               <button>RUFEN SIE UNS AN</button>
               <button>DEN SHOP BESUCHEN</button>
             </div>

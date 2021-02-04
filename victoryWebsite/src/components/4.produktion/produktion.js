@@ -10,13 +10,28 @@ const Produktion = () => {
     <>
       <MediaQuery maxWidth={800}>
         <div className={styles.container}>
-          <h2>PRODUKTION</h2>
-          <h5>
-            Das perfekte Produkt herzustellen ist eine Herausforderung die wir
-            schätzen, weil wir alles tun, um sie zu erfüllen.
-          </h5>
-          <ProduktionImg />
-          <div className={styles.text_container}>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+            <h2>PRODUKTION</h2>
+            <h5>
+              Das perfekte Produkt herzustellen ist eine Herausforderung die wir
+              schätzen, weil wir alles tun, um sie zu erfüllen.
+            </h5>
+          </div>
+          <div
+            data-sal="fade"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            data-sal-easing="ease"
+          >
+            <ProduktionImg />
+          </div>
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+            data-sal-easing="ease"
+            className={styles.text_container}
+          >
             <p>
               Wir finden die richtige Fabrik aus einer weltweiten Auswahl und
               nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen
@@ -37,8 +52,8 @@ const Produktion = () => {
               man sich verlaufen kann. Ein weiterer Grund, mit uns zu arbeiten.
             </p>
             <AnchorLink to="/#contact">
-            <button>PRODUKTION STARTEN</button>
-          </AnchorLink>
+              <button>PRODUKTION STARTEN</button>
+            </AnchorLink>
           </div>
         </div>
       </MediaQuery>

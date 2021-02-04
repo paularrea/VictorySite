@@ -6,14 +6,22 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 const ProduktionDesktop = () => {
   return (
     <div className={styles.container}>
-      <h2>PRODUKTION</h2>
-      <h5>
-        Das perfekte Produkt herzustellen ist eine Herausforderung die wir
-        schätzen, weil wir alles tun, um sie zu erfüllen.
-      </h5>
-      <hr className={styles.hr} />
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+        <h2>PRODUKTION</h2>
+        <h5>
+          Das perfekte Produkt herzustellen ist eine Herausforderung die wir
+          schätzen, weil wir alles tun, um sie zu erfüllen.
+        </h5>
+        <hr className={styles.hr} />
+      </div>
       <div className={styles.flex_container}>
-        <div className={styles.text_container}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          data-sal-easing="ease"
+          className={styles.text_container}
+        >
           <p>
             Wir finden die richtige Fabrik aus einer weltweiten Auswahl und
             nutzen unsere Erfahrung und unseren Einfluss, um Ihnen einen
@@ -37,7 +45,13 @@ const ProduktionDesktop = () => {
             <button>PRODUKTION STARTEN</button>
           </AnchorLink>
         </div>
-        <div className={styles.img_container}>
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          data-sal-easing="ease"
+          className={styles.img_container}
+        >
           <ProduktionImg />
         </div>
       </div>

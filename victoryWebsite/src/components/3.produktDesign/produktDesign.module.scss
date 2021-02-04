@@ -44,6 +44,13 @@
    }
 
 }
+@media (min-width:700) {
+    .flex_container{
+        div{
+            width: 10vw !important;
+        }
+    }
+}
 
 @media (min-width: 800px) {
     .container{

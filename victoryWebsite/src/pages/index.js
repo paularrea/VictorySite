@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import { ParallaxProvider } from "react-scroll-parallax"
 import styles from "../styles/index.scss"
 
 import Intro from "../components/1.intro/intro"
@@ -16,7 +15,6 @@ import ContactForm from "../components/8.Contact/form"
 import Blog from "../components/9.Blog/blog"
 
 const IndexPage = () => (
-  <ParallaxProvider>
     <div className={styles.website}>
       <Layout>
         <SEO title="Home" />
@@ -31,7 +29,6 @@ const IndexPage = () => (
         <Blog />
       </Layout>
     </div>
-  </ParallaxProvider>
 )
 
 export default IndexPage

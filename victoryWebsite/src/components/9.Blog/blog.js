@@ -8,9 +8,16 @@ import BlogImgThree from "./blogImgThree"
 const Blog = () => {
   return (
     <div className={styles.container}>
-      <h2>VIKTOR BLOG</h2>
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+        <h2>VIKTOR BLOG</h2>
+      </div>
       <div className={styles.post_container}>
-        <div className={styles.post}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={styles.post}
+        >
           <BlogImgOne />
           <h5>Article 1 title</h5>
           <p>
@@ -19,7 +26,12 @@ const Blog = () => {
           </p>
           <small>20/JAN/2021</small>
         </div>
-        <div className={styles.post}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={styles.post}
+        >
           <BlogImgTwo />
           <h5>Article 2 title</h5>
           <p>
@@ -28,7 +40,12 @@ const Blog = () => {
           </p>
           <small>20/JAN/2021</small>
         </div>
-        <div className={styles.post}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={styles.post}
+        >
           <BlogImgThree />
           <h5>Article 3 title</h5>
           <p>

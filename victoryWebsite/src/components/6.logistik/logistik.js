@@ -16,17 +16,26 @@ const Logistik = () => {
     <>
       <MediaQuery maxWidth={800}>
         <div className={styles.container}>
-          <h2>LOGISTIK</h2>
-          <h5>
-            Wir bieten logistische Dienstleistungen immer mit der Garantie und
-            Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und
-            bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere
-            Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt den
-            Sieg!
-          </h5>
-          <h4>Unser Team Garantiert:</h4>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+            <h2>LOGISTIK</h2>
+            <h5>
+              Wir bieten logistische Dienstleistungen immer mit der Garantie und
+              Qualität an. Unser Team stellt sich auf Ihre Bedürfnisse ein und
+              bietet Ihnen massgeschneiderte Angebote zum besten Preis. Unsere
+              Arbeit ist beendet, wenn unser Kunde seine Ware erhält und fühlt
+              den Sieg!
+            </h5>
+          </div>
+          <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+            <h4>Unser Team Garantiert:</h4>
+          </div>
           <div className={styles.bullet_container}>
-            <div className={styles.bullet}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={styles.bullet}
+            >
               <LogistikOne />
               <h5>Konservierung der Produkte</h5>
               <p>
@@ -34,7 +43,12 @@ const Logistik = () => {
                 Produkte fortgesetzt.
               </p>
             </div>
-            <div className={styles.bullet}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={styles.bullet}
+            >
               <LogistikTwo />
               <h5>Kennzeichnung</h5>
               <p>
@@ -44,7 +58,12 @@ const Logistik = () => {
                 Verlust.
               </p>
             </div>
-            <div className={styles.bullet}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={styles.bullet}
+            >
               <LogistikThree />
               <h5>Handhabung des Produkts</h5>
               <p>
@@ -52,7 +71,12 @@ const Logistik = () => {
                 Verpackungsmaterialien und Packstücken.
               </p>
             </div>
-            <div className={styles.bullet}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={styles.bullet}
+            >
               <LogistikFour />
               <h5>Lagerverwaltung</h5>
               <p>
@@ -61,7 +85,12 @@ const Logistik = () => {
                 unserem Kunden verhandelt.
               </p>
             </div>
-            <div className={styles.bullet}>
+            <div
+              data-sal="slide-up"
+              data-sal-delay="100"
+              data-sal-duration="1000"
+              className={styles.bullet}
+            >
               <LogistikFive />
               <h5>Effizienter Versorgungskreislauf</h5>
               <p>
@@ -71,7 +100,14 @@ const Logistik = () => {
               </p>
             </div>
           </div>
-          <LogistikImg />
+
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+          >
+            <LogistikImg />
+          </div>
           <div className={styles.button}>
             <AnchorLink to="/#contact">
               <button>BERATUNG EINHOLEN</button>

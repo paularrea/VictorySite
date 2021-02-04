@@ -3,13 +3,12 @@ import styles from "./produktDesign.module.scss"
 import PDImg from "./pdImg"
 import MediaQuery from "react-responsive"
 import PDDesktopImg from "./pdDesktopImg"
-import { Parallax } from "react-scroll-parallax"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const ProduktDesign = () => {
   return (
     <div id="services" className={styles.container}>
-      <div data-sal="fade" data-sal-delay="200" data-sal-duration="800">
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         <h2>PRODUKTDESIGN</h2>
         <h4>Non-Food Konzept</h4>
         <h5>
@@ -18,19 +17,23 @@ const ProduktDesign = () => {
         </h5>
       </div>
       <hr />
-      <div className={styles.flex_container}>
-        <Parallax className={styles.parallax} x={[-10, 12]} tagOuter="figure">
-          <MediaQuery maxWidth={800}>
-            <PDImg />
-          </MediaQuery>
-          <MediaQuery minWidth={800}>
-            <PDDesktopImg />
-          </MediaQuery>
-        </Parallax>
+      <div
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-duration="1000"
+        data-sal-easing="ease"
+        className={styles.flex_container}
+      >
+        <MediaQuery maxWidth={800}>
+          <PDImg />
+        </MediaQuery>
+        <MediaQuery minWidth={800}>
+          <PDDesktopImg />
+        </MediaQuery>
         <div
           data-sal="slide-up"
-          data-sal-delay="400"
-          data-sal-duration="800"
+          data-sal-delay="100"
+          data-sal-duration="1000"
           data-sal-easing="ease"
           className={styles.text_container}
         >

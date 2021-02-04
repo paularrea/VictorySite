@@ -7,11 +7,17 @@ import gif from "../../gif/victory.gif"
 const FuhlenDesktop = () => {
   return (
     <div className={styles.fulhen_container}>
-      <FuhlenImgDesktop />
-      <h1>FÜHLEN DEN SIEG</h1>
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+        <FuhlenImgDesktop />
+      </div>
+      <div data-sal="fade" data-sal-delay="200" data-sal-duration="1000">
+        <h1>FÜHLEN DEN SIEG</h1>
+      </div>
       <div className={styles.container}>
-        <div><img src={gif} alt="macbook gif" /></div>
-        <div>
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+          <img src={gif} alt="macbook gif" />
+        </div>
+        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
           <h2>DAS KRONJUWEL</h2>
           <h5>
             Für Kunden, die keine eigenen Kollektionen entwickeln wollen, haben
@@ -23,7 +29,15 @@ const FuhlenDesktop = () => {
             Produkten in einem einzigen Warenkorb. Sie benötigen nur ein paar
             Klicks.
           </p>
-          <button><a href="https://www.victoryshop.ch/en/" rel="noreferrer" target="_blank">VICTORY SHOP</a></button>
+          <button>
+            <a
+              href="https://www.victoryshop.ch/en/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              VICTORY SHOP
+            </a>
+          </button>
         </div>
       </div>
     </div>
