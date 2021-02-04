@@ -54,7 +54,7 @@
 
 @media (min-width: 800px) {
     .container{
-        padding: 4rem; 
+        padding: 4rem 8rem; 
         h2{
          font-size: 44px;
         }
@@ -74,7 +74,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 4rem;
+            padding: 4rem 0;
             div{
                 min-width: 400px !important;
                 width: 30vw !important;
@@ -102,7 +102,7 @@
 }
 @media (min-width: 1100px) {
     .container{
-        padding: 6rem 8rem; 
+        padding: 6rem 14rem; 
     }
     .flex_container{
         div{
